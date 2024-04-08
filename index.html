@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Multi-step Register Form</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="steps-wrapper">
+                <div class="step current-slide" data-slide="0">
+                    <p class="common-title f-weight-600 mb-36">Register</p>
+                    <div class="form-fields mb-36">
+                        <div class="form-field d-flex">
+                            <label for="name" class="f-weight-600">Name</label>
+                            <input type="text" name="name" id="name" placeholder="enter your email" autocomplete="given-name" class="transition f-weight-600" required>
+                        </div>
+                        <div class="form-field d-flex">
+                            <label for="mail" class="f-weight-600">Email</label>
+                            <input type="email" name="mail" id="mail" placeholder="example@gmail.com" autocomplete="email" class="transition f-weight-600" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="step" data-slide="1">
+                    <p class="common-title f-weight-600 mb-24">Which topics you are interested in?</p>
+                    <ul class="topics-list mb-36">
+                        <li class="transition c-pointer" tabindex="0">Software Development</li>
+                        <li class="transition c-pointer" tabindex="0">User Experience</li>
+                        <li class="transition c-pointer" tabindex="0">Graphic Design</li>
+                    </ul>
+
+                </div>
+                <div class="step" data-slide="2">
+                    <p class="common-title f-weight-600 mb-24">Summary</p>
+                    <div class="summary mb-36">
+                        <div class="summary-field">
+                            <p class="summary-name">Name: <strong>Emily Johnson</strong></p>
+                            <p class="summary-email">Email: <strong>emily@emilyjohsonstl.com</strong></p>
+                        </div>
+                        <div class="summary-topics">
+                            <p class="topics-title">Topics:</p>
+                            <ul>
+                                <li><strong>User Experience</strong></li>
+                                <li><strong>Graphic Design</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="step-continue">
+                    <button class="continue-btn transition c-pointer f-weight-600" tabindex="0">Continue</button>
+                </div>
+            </div>
+            <div class="steps-dots d-flex">
+                <div class="step-info">
+                    <p>Step 1 of 3</p>
+                </div>
+                <div class="dots-wrapper d-flex">
+                    <div class="dot transition current-dot" data-dot="0"></div>
+                    <div class="dot transition" data-dot="1"></div>
+                    <div class="dot transition" data-dot="2"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
