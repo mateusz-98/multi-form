@@ -256,3 +256,8 @@ label {
 .step {
     display: none;
 }
+@media screen and (max-width: 639px) {
+    section {
+        padding: 0 12px;
+    }
+}
